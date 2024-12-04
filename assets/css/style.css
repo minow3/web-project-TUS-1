@@ -1,0 +1,328 @@
+/* ----- Reset layout ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Overall layout ----- */
+/* EXAMPLE Tag selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: #792359;
+    color:aliceblue;
+}
+
+/* EXAMPLE Class selector */
+.container {
+    width: 80%;
+    margin: auto;
+    /* EXAMPLE Border */
+    border: 2px solid #D72483;
+    /* EXAMPLE Padding */
+    padding: 2em;
+
+}
+
+h1, h2, h3 {
+    color: #FD3E81;
+}
+
+/* ----- Header ----- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.navbar > nav {
+    float: right;  
+}
+
+.navbar > nav > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* EXAMPLE Complex selector */
+.navbar > nav > ul > li > a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #D72483;
+    padding: 2em;
+}
+
+/* EXAMPLE Compound selector */
+.navbar > nav > ul > li > a:hover {
+    background-color: #FD3E81;
+    color: skyblue;
+    text-decoration: underline;
+}
+
+.navbar > img {
+    width: 8em;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header > h2 {
+    padding: 0.5em;
+}
+
+/* ----- Main ----- */
+.introduction {
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 3em;
+}
+
+/* EXAMPLE ID selector */
+#intro-text {
+    padding: 0.5em;
+}
+
+#intro-map {
+    max-height: 20em;
+}
+
+.hyperlinks {
+    color: #FD3E81;
+    text-decoration: none;
+}
+
+.hyperlinks:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+fieldset {
+    border-color: #D72483;
+    border-style: solid;
+}
+.people-society {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.people-society > table, th, td {
+    text-align: center;
+    border: 2px solid;
+    border-collapse: separate;
+    border-spacing: 3px;
+    border-color: #D72483;
+    padding: 1px;
+}
+
+.people-society > table > thead {
+    background-color: #FD3E81;
+}
+
+.people-society > table > tbody {
+    background-color: skyblue;
+    color:black;
+}
+
+.people-society > table > tfoot {
+    background-color: #FD3E81;
+}
+
+
+hr {
+    border-color: #FD3E81;
+    border-style: solid;
+    border-width: 2px;
+    /* EXAMPLE Margin */
+    margin: 2em 0em 2em 0em;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.photos > img {
+    width: 18em;
+    height: 15em;
+    border: 2px solid #D72483;
+    padding: 0.5em;
+}
+
+.government, .citizenship {
+    display: flex;
+    justify-content: left;
+    padding-left: 3em;;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* ----- Footer -----*/
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+#button {
+    background-color: #FD3E81;
+    padding: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#button:hover {
+    background-color: skyblue;
+    color: #FD3E81;
+}
+
+footer > p {
+    margin: 1em;
+}
+
+footer > p > a {
+    color: #FD3E81;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+/* ----- Form -----*/
+.form {
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+}
+form {
+    padding: 1em;
+}
+
+label,input {
+    width:200px;
+    display:inline-block;
+}
+
+label {
+    padding: 0.5em;
+    color: #FD3E81;
+    font-weight: bold;
+    font-size: large;
+}
+
+input {
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid #D72483;
+    border-radius: 0.5em;
+    background-color: skyblue;
+    color: black;
+    font-weight: bold;
+}
+
+input:hover {
+    background-color: #FD3E81;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #FD3E81;
+    padding: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    height: 3em;
+}
+
+input[type="submit"]:hover {
+    background-color: skyblue;
+    color: #FD3E81;
+}
+
+input[type="reset"] {
+    background-color: #FD3E81;
+    padding: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    height: 3em;
+}
+
+input[type="reset"]:hover {
+    background-color: skyblue;
+    color: #FD3E81;
+}
+
+select {
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid #D72483;
+    border-radius: 0.5em;
+    background-color: skyblue;
+    color: black;
+    font-weight: bold;
+}
+
+.citizenshipIreland {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;  
+}
+
+.citizenshipIreland > legend {
+    color: #FD3E81;
+    font-weight: bold;
+    font-size: large;
+}
+
+#yesVote, #noVote {
+    display: flex;
+    width: 20px;
+    padding-left: 0.5em;
+}
+
+/* ----- Media Queries ----- */
+@media only screen and (max-width: 1400px) {
+    .photos{
+        justify-content: center;
+        align-items: center;
+    }
+    .photo > img {
+        width: 15em;
+        height: 12em;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .photos > img {
+        width: 12em;
+        height: 9em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+    }
+}
